@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+/*
+Даны два угла треугольника (в градусах). Определить, существует ли такой треугольник, и если да, то будет ли
+он прямоугольным.
+ */
+
+public class Trian {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter angle");
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        sc.close();
+        if(x + y < 180){
+            System.out.println("Thats triangle");
+            if(180-x == 90 || 180-y == 90){
+                System.out.println("Thats right triangle");
+            }
+        }
+        else{
+            System.out.println("Thats not triangle");
+        }
+    }
+}
