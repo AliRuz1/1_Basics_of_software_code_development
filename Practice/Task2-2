@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+/*
+Найти max{min(a, b), min(c, d)}.
+ */
+public class MaxorMin {
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a,b,c,d");
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        double d = sc.nextDouble();
+        sc.close();
+        double min_number1 = Math.min(a,b);
+        double min_number2 = Math.min(c,d);
+        double max_number = Math.max(min_number1,min_number2);
+        System.out.println(max_number + "-max");
+
+    }
+}
