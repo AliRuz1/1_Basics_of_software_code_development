@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Funcc {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter x");
+        int x = sc.nextInt();
+        sc.close();
+        double f1 = Math.pow(x,2) - 3*x + 9;
+        double f2 = 1/(Math.pow(x,3)+6);
+        if(x <= 3){
+            System.out.println(f1);
+        }
+        else if (x>3){
+            System.out.println(f2);
+        }
+    }
+}
