@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+/*
+Для каждого натурального числа в промежутке от m до n вывести все делители, кроме единицы и самого числа.
+m и n вводятся с клавиатуры.
+ */
+
+public class Divisiors {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter m,n");
+        int m = sc.nextInt();
+        int n =sc.nextInt();
+        sc.close();
+        int chislo = 0;
+        while(m<=n) {
+            if(m/chislo == 0){
+                int divisior = m/chislo;
+                System.out.println(divisior);
+            }
+            m++;
+        }
+    }
+}
