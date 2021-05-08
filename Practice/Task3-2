@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+//Вычислить значения функции на отрезке [а,b] c шагом h:
+
+public class FuncWithH {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter lenth of line:a,b");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println("Enter h");
+        double h = sc.nextDouble();
+        System.out.println("Enter x");
+        int x = sc.nextInt();
+        sc.close();
+        if(x>2){
+            do {
+                x = (int) (x+h);
+                System.out.println(x);
+            } while(x<b);
+        }
+        else if(x<=2){
+            do {
+                x -= h;
+                System.out.println(x);
+            } while(a>x);
+        }
+    }
+}
